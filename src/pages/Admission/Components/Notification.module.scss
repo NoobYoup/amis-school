@@ -1,0 +1,195 @@
+@use '@/styles/_variables.scss' as v;
+
+.admission-notice-section {
+    padding: 80px 0;
+    // background: v.$gradient-bg;
+}
+
+.notice-card {
+    background: white;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.notice-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: v.$gradient-bg;
+}
+
+.notice-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid v.$gradient-bg;
+}
+
+.notice-header h2 {
+    color: v.$primary-color;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.notice-header .school-year {
+    font-size: 1.3rem;
+    color: #666;
+    font-weight: 600;
+}
+
+.notice-section {
+    margin-bottom: 35px;
+}
+
+.notice-section h3 {
+    color: v.$primary-color;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid v.$gradient-bg;
+}
+
+.info-row {
+    display: flex;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.info-row:hover {
+    // background: v.$gradient-bg;
+}
+
+.info-label {
+    font-weight: 600;
+    color: v.$text-dark;
+    min-width: 200px;
+}
+
+.info-value {
+    color: #555;
+}
+
+.fee-table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.fee-table thead {
+    background: v.$gradient-bg;
+    color: white;
+}
+
+.fee-table th,
+.fee-table td {
+    padding: 15px;
+    text-align: left;
+}
+
+.fee-table tbody tr {
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.fee-table tbody tr:nth-child(even) {
+    // background: v.$gradient-bg;
+}
+
+.fee-table tbody tr:hover {
+    background: #e8f5e9;
+    transform: scale(1.01);
+}
+
+.note-box {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.note-box h4 {
+    color: #856404;
+    margin-bottom: 15px;
+}
+
+.note-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.note-box ul li {
+    padding: 8px 0;
+    padding-left: 25px;
+    position: relative;
+}
+
+.note-box ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #ffc107;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.requirement-box {
+    background: #d1ecf1;
+    border-left: 4px solid #17a2b8;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.requirement-box h4 {
+    color: #0c5460;
+    margin-bottom: 15px;
+}
+
+.highlight-box {
+    background: v.$bg-light;
+    padding: 25px;
+    border-radius: 15px;
+    margin: 20px 0;
+    border-left: 4px solid v.$primary-color;
+}
+
+.highlight-box h4 {
+    color: v.$primary-color;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-list li {
+    padding: 10px 0;
+    padding-left: 30px;
+    position: relative;
+    color: #555;
+}
+
+.feature-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: v.$primary-color;
+    font-weight: bold;
+    font-size: 1.2rem;
+}

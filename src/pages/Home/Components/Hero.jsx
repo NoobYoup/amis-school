@@ -18,7 +18,7 @@ function Hero() {
                                 Công nghệ đào tạo tiên tiến - Chất lượng giảng
                                 dạy vượt trội
                             </p>
-                            {/* <button className="btn btn-custom btn-lg">
+                            {/* <button className={`${cx("btn-custom")}`}>
                                 <i className="fas fa-play me-2"></i>Tìm hiểu
                                 thêm
                             </button> */}

@@ -1,0 +1,39 @@
+@use '@/styles/_variables.scss' as v;
+
+.contact-info-section {
+    background: #f8f9fa;
+    padding: 60px 0;
+    border-top: 1px solid #e9ecef;
+}
+
+.contact-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.contact-card i {
+    font-size: 2.5rem;
+    color: v.$primary-color;
+    margin-bottom: 20px;
+}
+
+.contact-card h5 {
+    color: v.$text-dark;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.contact-card p {
+    color: #6c757d;
+    margin-bottom: 0;
+}

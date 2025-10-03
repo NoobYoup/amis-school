@@ -1,17 +1,18 @@
 import "./Header.scss";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light sticky-top">
             <div className="container">
-                <a className="navbar-brand" href="#">
+                <Link to="/" className="navbar-brand">
                     <img
                         src="/images/logo_amis-removebg-preview.png"
                         className="logo-image"
                         alt="Amis"
                     />
                     <strong style={{ color: "#183f6d" }}>AMIS</strong>
-                </a>
+                </Link>
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -23,14 +24,14 @@ const Header = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
-                            <a className="nav-link" href="#home">
+                            <Link to="/admission" className="nav-link">
                                 Tuyển sinh
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#about">
+                            <Link to="/english-center" className="nav-link">
                                 Trung tâm Anh Ngữ
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#programs">
