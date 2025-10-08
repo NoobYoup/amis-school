@@ -5,7 +5,7 @@ const cx = classNames.bind(styles);
 
 function Contact() {
     return (
-        <section className={cx('contact-info-section')} id="lien-he">
+        <section className={cx('contact-info-section')} id="contact">
             <div className="container">
                 <div className="row mb-5">
                     <div className="col-lg-8 mx-auto text-center">
@@ -14,19 +14,17 @@ function Contact() {
                     </div>
                 </div>
                 <div className="row g-4">
-                    <div className="col-lg-4 col-md-6">
+                    <div className="col-lg-6 col-md-6">
                         <div className={cx('contact-card')}>
                             <i className="fas fa-map-marker-alt"></i>
                             <h5>Địa chỉ trường</h5>
                             <p>
-                                620 Minh Phụng St.
-                                <br />
-                                Ward 2, District 6<br />
-                                Ho Chi Minh City
+                                620 Minh Phụng, Phường Bình Tây <br />
+                                Thành phố Hồ Chí Minh
                             </p>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6">
+                    <div className="col-lg-6 col-md-6">
                         <div className={cx('contact-card')}>
                             <i className="fas fa-phone"></i>
                             <h5>Hotline tuyển sinh</h5>
@@ -35,11 +33,11 @@ function Contact() {
                                 <br />
                                 Tiến sĩ Tony Nguyễn:
                                 <br />
-                                083.456.6818
+                                01234566818
                             </p>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6">
+                    {/* <div className="col-lg-4 col-md-6">
                         <div className={cx('contact-card')}>
                             <i className="fas fa-envelope"></i>
                             <h5>Email</h5>
@@ -49,7 +47,7 @@ function Contact() {
                                 info@amis.edu.vn
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

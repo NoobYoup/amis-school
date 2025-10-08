@@ -1,4 +1,5 @@
 import './Footer.scss';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -13,27 +14,27 @@ const Footer = () => {
                                 lượng giáo dục quốc tế.
                             </p>
                             <div className="social-links">
-                                <a href="#">
+                                <a href="https://www.facebook.com/TruongQuocTeMyUc.AMIS" target="_blank">
                                     <i className="fab fa-facebook-f"></i>
                                 </a>
-                                <a href="#">
+                                <a href="https://www.youtube.com/@AmisTruongQT" target="_blank">
                                     <i className="fab fa-youtube"></i>
                                 </a>
-                                <a href="#">
+                                {/* <a href="#">
                                     <i className="fab fa-instagram"></i>
                                 </a>
                                 <a href="#">
                                     <i className="fab fa-linkedin-in"></i>
-                                </a>
+                                </a> */}
                             </div>
                         </div>
-                        <div className="col-lg-4 mb-4">
+                        {/* <div className="col-lg-4 mb-4">
                             <h5>Liên kết nhanh</h5>
                             <ul className="list-unstyled">
                                 <li>
-                                    <a href="#about" className="text-white-50">
-                                        Giới thiệu
-                                    </a>
+                                    <Link to="/" className="text-white-50">
+                                        Trang chủ
+                                    </Link>
                                 </li>
                                 <li>
                                     <a href="#programs" className="text-white-50">
@@ -51,7 +52,7 @@ const Footer = () => {
                                     </a>
                                 </li>
                             </ul>
-                        </div>
+                        </div> */}
                         <div className="col-lg-4 mb-4">
                             <h5>Đối tác</h5>
                             <p className="text-white-50">
@@ -59,9 +60,9 @@ const Footer = () => {
                                 <br />
                                 <i className="fas fa-university me-2"></i>University of Wisconsin
                                 <br />
-                                <i className="fas fa-certificate me-2"></i>ETS - Educational Testing Service
-                                <br />
                                 <i className="fas fa-university me-2"></i>University of Michigan
+                                <br />
+                                <i className="fas fa-certificate me-2"></i>ETS - Educational Testing Service
                             </p>
                         </div>
                     </div>

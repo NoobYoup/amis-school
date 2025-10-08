@@ -3,8 +3,10 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import MainLayout from '@/layouts/MainLayout';
 import Home from '@/pages/Home/Home';
 import Admission from '@/pages/Admission/Admission';
-import CenterEnglish from '@/pages/CenterEnglish/CenterEnglish';
-import NotificationAdmission from '@/pages/Admission/Components/Notification';
+import Activities from '@/pages/Activities/Activities';
+import News from '@/pages/News/News';
+import Information from '@/pages/Information/Information';
+import Documents from '@/pages/Documents/Documents';
 
 function App() {
     return (
@@ -14,8 +16,10 @@ function App() {
                     <Route element={<MainLayout />}>
                         <Route path="/" element={<Home />} />
                         <Route path="/admission" element={<Admission />} />
-                        <Route path="/admission/notification" element={<NotificationAdmission />} />
-                        <Route path="/english-center" element={<CenterEnglish />} />
+                        <Route path="/activities" element={<Activities />} />
+                        <Route path="/news" element={<News />} />
+                        <Route path="/information" element={<Information />} />
+                        <Route path="/documents" element={<Documents />} />
                     </Route>
                 </Routes>
             </BrowserRouter>
