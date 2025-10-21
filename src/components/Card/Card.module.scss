@@ -1,0 +1,79 @@
+@use '@/styles/_variables.scss' as v;
+
+.card {
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    background: #fff;
+    padding: 20px;
+    transition: all 0.3s ease;
+
+    &.stats {
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: v.$primary-color;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: v.$text-dark;
+            margin-top: 10px;
+        }
+
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+    }
+    &.feature {
+        height: 100%;
+        border-top: 5px solid v.$primary-color;
+
+        .feature-icon {
+            font-size: 3rem;
+            color: v.$primary-color;
+            margin-bottom: 20px;
+        }
+
+        .feature-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: v.$text-dark;
+        }
+
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+    }
+    &.program {
+        background: #fff3e0;
+        color: #ef6c00;
+    }
+    &.partner {
+        background: #f3e5f5;
+        color: #6a1b9a;
+    }
+    // ... thêm các biến thể khác nếu cần
+}
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+.title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.description {
+    font-size: 1rem;
+    color: #444;
+}
+.content {
+    // tuỳ chỉnh nếu cần
+}

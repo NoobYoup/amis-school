@@ -1,0 +1,6 @@
+@use '@/styles/_variables.scss' as v;
+
+.stats-section {
+    background: v.$bg-light;
+    padding: 60px 0;
+}
